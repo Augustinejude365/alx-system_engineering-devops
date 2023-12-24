@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script will print "Best School" 10 (ten) times on the screen.
+g=0
+while [ $((g++)) -lt 10 ]; do
+	echo Best School
+done
