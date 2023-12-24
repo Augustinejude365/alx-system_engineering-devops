@@ -5,7 +5,7 @@
 #    displays Best School for the other iterations
 
 g=0
-while [ $((ig++)) -lt 10 ]; do
+while [ $((g++)) -lt 10 ]; do
 	if [ $g -eq 4 ]; then
 		echo bad luck
 	elif [ $g -eq 8 ]; then
