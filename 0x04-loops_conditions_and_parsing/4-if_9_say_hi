@@ -3,7 +3,7 @@
 g=0
 while [ $((g++)) -lt 10 ]; do
 	echo Best School
-	if [ $i -eq 9 ];
+	if [ $g -eq 9 ];
 	then
 		echo Hg
 	fi
