@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# displays Best School 10 times.
+
+KOUNTER=1
+while [ $kOUNTER -lt 101 ]
+do
+    if [ $((KOUNTER%15)) = 0 ]
+    then
+        echo "FizzBuzz"
+    elif [ $((KOUNTER%3)) = 0 ]
+    then
+        echo "Fizz"
+    elif [ $((KOUNTER%5)) = 0 ]
+    then
+        echo "Buzz"
+    else
+        echo "$KOUNTER"
+    fi
+    let KOUNTER+=1
+done
