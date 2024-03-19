@@ -3,7 +3,8 @@
 #include <unistd.h>
 
 /**
- * infinite_while - A function that creates an infinite loop to make the program hang
+ * infinite_while - A function that creates an infinite loop to make the
+ * program hang
  * Return: always 0
  */
 int infinite_while(void)
