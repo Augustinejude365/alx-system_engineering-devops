@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Update the hosts file to configure localhost and facebook.com
+echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts
+echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts
+
+# Restart networking to apply changes
+sudo systemctl restart networking
+
+# If running in Docker, make sure it resolves localhost and facebook.com
+if [ -f /.dockerenv ]; then
+    echo "127.0.0.2 localhost" >> /etc/hosts
+    echo "8.8.8.8 facebook.com" >> /etc/hosts
+fi
+
+# Display a message indicating successful configuration
+echo "Configuration completed successfully."
